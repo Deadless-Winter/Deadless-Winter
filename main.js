@@ -1,39 +1,34 @@
 
-  const toggleButton1 = document.getElementById('obch');
-  const toggleButton2 = document.getElementById('game');
-  const toggleButton3 = document.getElementById('predi');
-  const textContainer1 = document.getElementById('t1');
-  const textContainer2 = document.getElementById('t2');
-  const textContainer3 = document.getElementById('t3');
-
-  toggleButton1.addEventListener('click', () => {
-    if (textContainer1.style.display === 'none') {
-      textContainer1.style.display = 'flex'; // Показываем текст
-      textContainer2.style.display = 'none'; // Скрываем текст
-      textContainer3.style.display = 'none'; // Скрываем текст
-    } else {
-      textContainer2.style.display = 'none'; // Скрываем текст
-      textContainer3.style.display = 'none'; // Скрываем текст
-    }
-  });
- toggleButton2.addEventListener('click', () => {
-    if (textContainer2.style.display === 'none') {
-      textContainer2.style.display = 'flex'; // Показываем текст
-      textContainer1.style.display = 'none'; // Скрываем текст
-      textContainer3.style.display = 'none'; // Скрываем текст
-    } else {
-      textContainer1.style.display = 'none'; // Скрываем текст
-      textContainer3.style.display = 'none'; // Скрываем текст
-    }
-  });
- toggleButton3.addEventListener('click', () => {
-    if (textContainer3.style.display === 'none') {
-      textContainer3.style.display = 'flex'; // Показываем текст
-      textContainer1.style.display = 'none'; // Скрываем текст
-      textContainer2.style.display = 'none'; // Скрываем текст
-    } else {
-      textContainer1.style.display = 'none'; // Скрываем текст
-      textContainer2.style.display = 'none'; // Скрываем текст
-    }
-  });
-  
+  const Button1 = document.getElementById('but1');
+  const Button2 = document.getElementById('but2');
+  const Button3 = document.getElementById('but3');
+  const text1 = document.getElementById('t1');
+  const text2 = document.getElementById('t2');
+  const text3 = document.getElementById('t3');
+  const bl1 = document.getElementById('bl1')
+  const bl2 = document.getElementById('bl2')
+  const rp = document.getElementById('rp')
+  const worldz = document.getElementById('worldz')
+Button1.addEventListener('click',()=>{
+  text1.style.display = 'flex'
+  text2.style.display = 'none'
+  text3.style.display = 'none'
+})
+Button2.addEventListener('click',()=>{
+  text1.style.display = 'none'
+  text2.style.display = 'flex'
+  text3.style.display = 'none'
+})
+Button3.addEventListener('click',()=>{
+  text1.style.display = 'none'
+  text2.style.display = 'none'
+  text3.style.display = 'flex'
+})
+rp.addEventListener('click',()=>{
+  bl2.style.display = 'none'
+  bl1.style.display = 'flex'
+})
+worldz.addEventListener('click',()=>{
+  bl1.style.display = 'none'
+  bl2.style.display = 'flex'
+})
