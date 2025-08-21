@@ -228,13 +228,15 @@ iframe{
     border: solid 2px #06875c7a;
     justify-content: center;
     position: static;
-    transform: translate(50px,-200px);
+    transform: translate(0px,-0px);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .sstext{
     display: flex;
     flex-direction: row;
-    transform: translateY(-300px);
-    padding-left: 100px;
+    width: 100%;
+    justify-content: end;
 }
 .sstext p{
     margin: 0;
